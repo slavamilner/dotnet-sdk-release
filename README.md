@@ -6,7 +6,7 @@ If you have any questions, comments, or issues related to this repository then p
 
 ## Overview
 
-The TigerConnect .NET SDK provides a simple way to enhance your .NET applications with intelligent, secure messaging from TigerConnect
+The TigerConnect .NET SDK provides a simple way to enhance your .NET applications with intelligent, secure messaging from TigerConnect. The SDK is a .NET wrapper of the TigerConnect REST APIs to make things easier to incorporate into your Windows applications.  
 
 In order to use the TigerConnect .NET SDK you must be a registered developer. All aspects of this setup are covered in detail in the [TigerConnect Documentation](https://tigerconnect.readme.io/).
 

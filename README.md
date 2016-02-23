@@ -13,7 +13,7 @@ In order to use the TigerConnect .NET SDK you must be a registered developer. Al
 ## Quick Example
 
 ```C#
-var client = new TigerConnectClient({ defaultOrganizationId: 'some-org-id' })
+TT.Win.SDK.Global.Init(appSettings["apiKey"], appSettings["apiSecret"]);
 
 client.signIn('user@mail.com', 's3cr3t', { udid: 'unique-device-id' }).then(function (session) {
   onSignedIn(session)

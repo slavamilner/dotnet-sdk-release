@@ -13,35 +13,26 @@ In order to use the TigerConnect .NET SDK you must be a registered developer. Al
 ## Quick Example
 
 ```C#
-TT.Win.SDK.Global.Init(appSettings["apiKey"], appSettings["apiSecret"]);
+// Initialize the SDK with an API key and secret belonging to a specific user
+TT.Win.SDK.Global.Init(ConfigurationManager.AppSettings["apiKey"], ConfigurationManager.AppSettings["apiSecret"]);
 
-client.signIn('user@mail.com', 's3cr3t', { udid: 'unique-device-id' }).then(function (session) {
-  onSignedIn(session)
-})
+// Subscribe to realtime events 
+TT.Win.SDK.Api.Events.MessageReceivedEvent += Events_MessageReceivedEvent;
+TT.Win.SDK.Api.Events.StartListening();
 
-function onSignedIn(session) {
-  console.log('Signed in as', session.user.displayName)
-  
-  client.messages.sendToUser(
-    'someone@mail.com',
-    'hello!'
-  ).then(function (message) {
-    console.log('sent', message.body, 'to', message.recipient.displayName)
-  })
+// Send message from the user
+TT.Win.SDK.Model.MessageEventData sentMessage = TT.Win.SDK.Api.Message.SendMessage("Test message", "testUser@mydomain.com");
 
-  client.events.connect()
-  
-  client.on('message', function (message) {
-    console.log(
-      'message event',
-      message.sender.displayName,
-      'to',
-      message.recipient.displayName,
-      ':',
-      message.body
-    )
-  })
+// Process messages sent to the user (delivered as Server Sent Events)
+private async static void Events_MessageReceivedEvent(object sender, TT.Win.SDK.Events.MessageEventArgs e)
+{
+	if (e.MessageData.sender_user == null)
+	{
+		e.MessageData.sender_user = await TT.Win.SDK.Api.User.GetUserAsync(e.MessageData.sender);
+	}
+	string result = string.Format("Message received from {0} : {1}", e.MessageData.sender_user.display_name, e.MessageData.body));
 }
+
 ```
 
 

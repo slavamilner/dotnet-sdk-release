@@ -3,28 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TigerConnectAspWebSample", "TigerConnectAspWebSample\", "{B8826A77-326B-4715-8576-2EAF8914E88D}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_57692"
-		Debug.AspNetCompiler.PhysicalPath = "TigerConnectAspWebSample\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57692\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_57692"
-		Release.AspNetCompiler.PhysicalPath = "TigerConnectAspWebSample\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57692\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "57692"
-		SlnRelativePath = "TigerConnectAspWebSample\"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TigerConnectAspNetWebApp", "TigerConnectAspNetWebApp\TigerConnectAspNetWebApp.csproj", "{B567ACCE-DDCF-4F41-BD5C-F0C3F24FD033}"
 EndProject
 Global
@@ -33,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B8826A77-326B-4715-8576-2EAF8914E88D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B8826A77-326B-4715-8576-2EAF8914E88D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B8826A77-326B-4715-8576-2EAF8914E88D}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{B8826A77-326B-4715-8576-2EAF8914E88D}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{B567ACCE-DDCF-4F41-BD5C-F0C3F24FD033}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B567ACCE-DDCF-4F41-BD5C-F0C3F24FD033}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B567ACCE-DDCF-4F41-BD5C-F0C3F24FD033}.Release|Any CPU.ActiveCfg = Release|Any CPU

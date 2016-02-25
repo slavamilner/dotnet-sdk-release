@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TigerConnectAspNetWebApp", "TigerConnectAspNetWebApp\TigerConnectAspNetWebApp.csproj", "{B567ACCE-DDCF-4F41-BD5C-F0C3F24FD033}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TigerConnectDotNetConsoleApp", "TigerConnectDotNetConsoleApp\TigerConnectDotNetConsoleApp.csproj", "{132776E1-2FC1-40EC-BE3D-47040C58E7F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B567ACCE-DDCF-4F41-BD5C-F0C3F24FD033}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B567ACCE-DDCF-4F41-BD5C-F0C3F24FD033}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B567ACCE-DDCF-4F41-BD5C-F0C3F24FD033}.Release|Any CPU.Build.0 = Release|Any CPU
+		{132776E1-2FC1-40EC-BE3D-47040C58E7F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{132776E1-2FC1-40EC-BE3D-47040C58E7F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{132776E1-2FC1-40EC-BE3D-47040C58E7F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{132776E1-2FC1-40EC-BE3D-47040C58E7F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

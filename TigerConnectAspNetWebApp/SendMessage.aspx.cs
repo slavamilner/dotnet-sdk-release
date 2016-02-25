@@ -44,7 +44,7 @@ namespace TigerConnectAspNetWebApp
 
                 if (messageSent.message_id != null)
                 {
-                    ShowResult(true, "Message sent successfully.  MessageId is " + messageSent.message_id);
+                    ShowResult(true, "Message sent successfully.  MessageId is " + messageSent.message_id + ".  <a href=\"MessageDetail.aspx?message_id=" + messageSent.message_id + "\">Click here</a> to view message detail and status.");
                 }
                 else
                 {

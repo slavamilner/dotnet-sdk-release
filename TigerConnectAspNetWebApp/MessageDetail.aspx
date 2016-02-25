@@ -1,4 +1,7 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SendMessage.aspx.cs" Inherits="TigerConnectAspNetWebApp.SendMessage" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MessageDetail.aspx.cs" Inherits="TigerConnectAspNetWebApp.MessageDetail" %>
+
+<!DOCTYPE html>
+
 
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -10,7 +13,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>TigerConnect asp.net Sample - Send Message</title>
+    <title>TigerConnect asp.net Sample - Message Detail</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -45,10 +48,10 @@
             <ul class="nav navbar-right top-nav"></ul>
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
-                    <li class="active">
+                    <li>
                         <a href="SendMessage.aspx"><i class="fa fa-fw fa-dashboard"></i>Message - Send</a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="MessageDetail.aspx"><i class="fa fa-fw fa-dashboard"></i>Message - Detail</a>
                     </li>
                     <li>
@@ -74,27 +77,30 @@
                         <asp:Literal runat="server" ID="sResults"></asp:Literal>
                         <div class="panel panel-info">
                             <div class="panel-heading">
-                                <h3 class="panel-title">Send A Message</h3>
+                                <h3 class="panel-title">Message Detail</h3>
                             </div>
                             <div class="panel-body">
-                                <form id="frmSendMessage" role="form" runat="server">
+                                <form id="frmMsgDetail" role="form" runat="server">
                                     <div class="form-group">
-                                        <label>Recipient (token, username, email, or phone#)</label>
-                                        <asp:TextBox ID="txtRecipient" CssClass="form-control" runat="server"></asp:TextBox>
+                                        <label>MessageId (Token)</label>
+                                        <span><asp:literal ID="sMessageId" runat="server"></asp:literal></span>
                                     </div>
                                     <div class="form-group">
-                                        <label>Message Body</label>
-                                        <asp:TextBox ID="txtMessage" CssClass="form-control" runat="server" TextMode="MultiLine"></asp:TextBox>
+                                        <label>Sender Token</label>
+                                        <span><asp:literal ID="sSenderToken" runat="server"></asp:literal></span>
                                     </div>
                                     <div class="form-group">
-                                        <label>Organization Token (optional)</label>
-                                        <asp:TextBox ID="txtOrg" CssClass="form-control" runat="server"></asp:TextBox>
+                                        <label>Recipient Token</label>
+                                        <span><asp:literal ID="sRecipientToken" runat="server"></asp:literal></span>
                                     </div>
                                     <div class="form-group">
-                                        <label>File Attachment (optional)</label>
-                                        <asp:FileUpload ID="FileUpload1" runat="server" />
+                                        <label>Message Status</label>
+                                        <span><asp:literal ID="sMessageStatus" runat="server"></asp:literal></span>
                                     </div>
-                                    <asp:Button ID="btnSend" runat="server" CssClass="btn btn-info" Text="Send Message" OnClick="btnSend_Click"  />
+                                    <div class="form-group">
+                                        <label>Full Message (JSON)</label><br />
+                                        <asp:TextBox ID="txtMessageJson" runat="server" CssClass="form-control" ReadOnly="true"></asp:TextBox>
+                                    </div>
                                 </form>
                             </div>
                         </div>
@@ -116,4 +122,3 @@
 
 </body>
 </html>
-

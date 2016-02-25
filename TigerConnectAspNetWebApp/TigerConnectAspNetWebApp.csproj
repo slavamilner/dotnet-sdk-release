@@ -101,6 +101,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CreateGroup.aspx" />
     <Content Include="css\bootstrap-rtl.css" />
     <Content Include="css\bootstrap-rtl.min.css" />
     <Content Include="css\bootstrap.css" />
@@ -113,6 +114,7 @@
     <Content Include="font-awesome\css\font-awesome.min.css" />
     <Content Include="font-awesome\fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="GroupDetail.aspx" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\jquery.js" />
@@ -126,6 +128,8 @@
     <Content Include="js\plugins\morris\morris.js" />
     <Content Include="js\plugins\morris\morris.min.js" />
     <Content Include="js\plugins\morris\raphael.min.js" />
+    <Content Include="MessageDetail.aspx" />
+    <Content Include="Metadata.aspx" />
     <Content Include="packages.config" />
     <Content Include="font-awesome\fonts\fontawesome-webfont.eot" />
     <Content Include="font-awesome\fonts\fontawesome-webfont.ttf" />
@@ -169,13 +173,49 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Search.aspx" />
     <Content Include="SendMessage.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreateGroup.aspx.cs">
+      <DependentUpon>CreateGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateGroup.aspx.designer.cs">
+      <DependentUpon>CreateGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GroupDetail.aspx.cs">
+      <DependentUpon>GroupDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GroupDetail.aspx.designer.cs">
+      <DependentUpon>GroupDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MessageDetail.aspx.cs">
+      <DependentUpon>MessageDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MessageDetail.aspx.designer.cs">
+      <DependentUpon>MessageDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Metadata.aspx.cs">
+      <DependentUpon>Metadata.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Metadata.aspx.designer.cs">
+      <DependentUpon>Metadata.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SendMessage.aspx.cs">
       <DependentUpon>SendMessage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

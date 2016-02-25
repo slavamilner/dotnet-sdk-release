@@ -1,0 +1,24 @@
+﻿#container-loading {
+    display: none;
+}
+
+#container-patients .patient-link {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.btn-show-form {
+    float: right;
+}
+
+#patient-new-order-form {
+    clear: both;
+}  
+
+.navbar-inverse .navbar-brand {
+    color: #d92b27;
+}  
+
+.panel-info {
+    margin-top: 15px;
+}    

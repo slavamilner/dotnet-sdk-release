@@ -26,8 +26,8 @@ The .NET SDK is available to use with the following platforms/frameworks:
 This github repository contains a .NET solution file with 3 example projects, including a web application, a Windows console application, and a Windows Service.  You may clone the repo or download the zipped version in order to access and use the projects.  Once you open the solution in Visual Studio, you can build the solution in order to restore all NuGet references, and to run the example projects.  Simply right-click on the project of interest and set it as your startup project to debug the code.
 
 You may also add the TigerConnect .NET SDK to your existing projects by making references to the required libraries:
-1.  Newtonsoft.Json - You may download this file as a NuGet package, or make a file reference to the appropriate version in the /packages/Newtonsoft folder in the solution root directory.
-2.  TigerText.Windows.SDK.dll - The TigerConnect SDK will be available as a NuGet package in the near future.  In the meantime, simply make a reference to the .dll that is in the /packages folder in the solution root directory.  
+* Newtonsoft.Json - You may download this file as a NuGet package, or make a file reference to the appropriate version in the /packages/Newtonsoft folder in the solution root directory.
+* TigerText.Windows.SDK.dll - The TigerConnect SDK will be available as a NuGet package in the near future.  In the meantime, simply make a reference to the .dll that is in the /packages folder in the solution root directory.  
 
 ## Quick Example
 

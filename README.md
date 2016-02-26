@@ -2,15 +2,13 @@
 
 This repository contains binary distributions of .NET SDK released by [TigerConnect](http://tigertext.com/tigerconnect).
 
-If you have any questions, comments, or issues related to this repository then please contact the team by emailing [tigerconnect@tigertext.com](mailto:tigerconnect@tigertext.com).
-
 ## Overview
 
 The TigerConnect .NET SDK provides a simple way to enhance your .NET applications with intelligent, secure messaging from TigerConnect. The SDK is a .NET wrapper of the TigerConnect REST APIs to make things easier to incorporate into your Windows applications.  
 
 This github repository contains a .NET solution file with 3 example projects, including a web application, a Windows console application, and a Windows Service. 
 
-In order to use the TigerConnect .NET SDK you must be a registered developer. All aspects of this setup are covered in detail in the [TigerConnect Documentation](https://tigerconnect.readme.io/).
+In order to use the TigerConnect .NET SDK you must be a registered developer. All aspects of this setup are covered in detail in the [TigerConnect Documentation](https://developer.tigertext.com/).
 
 The .NET SDK is available to use with the following platforms/frameworks:
 * .NET Framework 4.0 or higher (backward compatible up to Windows XP & Windows Server 2003)
@@ -57,3 +55,11 @@ private async static void Events_MessageReceivedEvent(object sender, TT.Win.SDK.
 }
 
 ```
+
+## Contact
+
+If you have any questions please reach out to the TigerConnect team any time by emailing [tigerconnect@tigertext.com](mailto:tigerconnect@tigertext.com).
+
+## License
+
+TigerConnect is licensed under our [Developer Terms of Use](https://developer.tigertext.com/developer-terms-of-use/).

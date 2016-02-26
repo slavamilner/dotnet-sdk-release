@@ -8,6 +8,8 @@ If you have any questions, comments, or issues related to this repository then p
 
 The TigerConnect .NET SDK provides a simple way to enhance your .NET applications with intelligent, secure messaging from TigerConnect. The SDK is a .NET wrapper of the TigerConnect REST APIs to make things easier to incorporate into your Windows applications.  
 
+This github repository contains a .NET solution file with 3 example projects, including a web application, a Windows console application, and a Windows Service. 
+
 In order to use the TigerConnect .NET SDK you must be a registered developer. All aspects of this setup are covered in detail in the [TigerConnect Documentation](https://tigerconnect.readme.io/).
 
 The .NET SDK is available to use with the following platforms/frameworks:
@@ -23,8 +25,10 @@ The .NET SDK is available to use with the following platforms/frameworks:
 
 ## Installation
 
-This github repository contains a .NET solution file with 3 example projects, including a web application, a Windows console application, and a Windows Service.  You may clone the repo or download the zipped version in order to access and use the projects.  Once you open the solution in Visual Studio, you can build the solution in order to restore all NuGet references, and to run the example projects.  Simply right-click on the project of interest and set it as your startup project to debug the code.
+###Download Zipped Versions
+To get started, you can clone the repository or download the zipped version in order to access and use the projects. Once you open the solution in Visual Studio, you can build the solution in order to restore all NuGet references, and to run the example projects. Simply right-click on the project of interest and set it as your startup project to debug the code.
 
+###NuGet
 You may also add the TigerConnect .NET SDK to your existing projects by making references to the required libraries:
 * Newtonsoft.Json - You may download this file as a NuGet package, or make a file reference to the appropriate version in the /packages/Newtonsoft folder in the solution root directory.
 * TigerText.Windows.SDK.dll - The TigerConnect SDK will be available as a NuGet package in the near future.  In the meantime, simply make a reference to the .dll that is in the /packages folder in the solution root directory.  

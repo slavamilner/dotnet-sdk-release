@@ -18,6 +18,7 @@
     <!-- Custom CSS -->
     <link href="css/sb-admin.css" rel="stylesheet">
     <link href="css/ttDemo.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -40,7 +41,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">TigerConnect Asp.net Web Sample</a>
+                <a class="navbar-brand" href="default.aspx">TigerConnect Asp.net</a>
             </div>
             <ul class="nav navbar-right top-nav"></ul>
             <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -74,10 +75,36 @@
                         <asp:Literal runat="server" ID="sResults"></asp:Literal>
                         <div class="panel panel-info">
                             <div class="panel-heading">
-                                <h3 class="panel-title">Search (Coming Soon)</h3>
+                                <h3 class="panel-title">Enter search parameters</h3>
                             </div>
                             <div class="panel-body">
-                                <form id="frmCreateGroup" role="form" runat="server">
+                                <h4 class="panel-subheading">Query Configuration (all optional)</h4>
+                            </div>
+                            <div class="panel-body">
+                                <form id="frmSearch" role="form" runat="server">
+                                    <div class="form-group">
+                                        <label>Entity type(s) to search</label>
+                                        <asp:CheckBoxList ID="cblSearchTypes" runat="server">
+                                            <asp:ListItem Text="Accounts" Value="account"></asp:ListItem>
+                                            <asp:ListItem Text="Groups" Value="group"></asp:ListItem>
+                                            <asp:ListItem Text="Distribution Lists" Value="distribution_list"></asp:ListItem>
+                                            <asp:ListItem Text="Public Groups" Value="public_group"></asp:ListItem>
+                                        </asp:CheckBoxList>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Continuatation Token (optional for paging)</label>
+                                        <asp:TextBox ID="txtContinuation" CssClass="form-control" runat="server"></asp:TextBox>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Organizations to search (optional, comma-separated list of org tokens</label>
+                                        <asp:TextBox ID="txtDirectory" CssClass="form-control" runat="server"></asp:TextBox>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Display Name</label>
+                                        <asp:TextBox ID="txtDisplayName" CssClass="form-control" runat="server"></asp:TextBox>
+                                    </div>
+
+                                    <asp:Button ID="btnSearch" runat="server" CssClass="btn btn-info" Text="Execute Search" OnClick="btnSearch_Click"  />
                                 </form>
                             </div>
                         </div>

@@ -1,8 +1,4 @@
-﻿#container-loading {
-    display: none;
-}
-
-#container-patients .patient-link {
+﻿#container-patients .patient-link {
     text-decoration: underline;
     cursor: pointer;
 }
@@ -13,12 +9,118 @@
 
 #patient-new-order-form {
     clear: both;
-}  
+}   
+
+#patient-new-order-form .panel-primary {
+    margin-top: 15px;
+}   
 
 .navbar-inverse .navbar-brand {
     color: #d92b27;
-}  
+}
 
-.panel-info {
-    margin-top: 15px;
-}    
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color:#949494;
+	font-weight: 500;
+	-webkit-font-smoothing:antialiased;
+} 
+h2{
+	color:#1d2027;
+	margin-top:10px;
+}
+label{
+	font-weight: 600;
+	color:#1d2027;
+}
+.form-control{
+	font-size: 16px;
+}
+
+.navbar-inverse{
+	background: #14afbe;
+    border: 0;
+}
+.navbar-header{
+	width: 225px;
+    background: #026c7a;
+}
+.navbar-inverse .navbar-brand{
+	color:#fff;
+	font-weight: 600;
+}
+.navbar-brand>img{
+	width:80px;
+	display: inline;
+	margin-top: -11px;
+    margin-right: 5px;
+}
+.nav>li.dropdown>a{
+	padding:5px 15px;
+	background: #1d2027;
+    color: white;
+    transition: all 0.2s ease;
+}
+.top-nav>li>a:hover, .top-nav>li>a:focus, .top-nav>.open>a, .top-nav>.open>a:hover, .top-nav>.open>a:focus{
+	background:#080808;
+}
+.side-nav{
+	background:#1d2027;
+}
+.side-nav>li>a{
+	transition: all 0.2s ease;
+}
+#page-wrapper{
+	background:#f1f2f7;
+}
+.panel-info{
+	border:1px solid #f7f7f7;
+}
+.panel-info>.panel-heading{
+	border:0;
+	color: white;
+	background:#99c262;
+}
+.icon{
+	width: 20px;
+    margin-right: 10px;
+}
+.avatar{
+	width:40px;
+	height:40px;
+	margin-right:12px;
+}
+.caret{
+	margin-left:10px;
+}
+.active #nav-patients{
+	border-left:5px solid #d92b27;
+}
+.active #nav-patients img{
+	margin-left:-5px;
+}
+button[type=reset]{
+	background: #949494;
+	border:0;
+	font-size:16px;
+	padding:8px 20px;
+	transition: all 0.2s ease;
+}
+button[type=reset]:hover{
+	background:#1d2027;
+}
+button[type=button]{
+	background: #14afbe;
+	border:0;
+	font-size:16px;
+	padding:8px 20px;
+	transition: all 0.2s ease;
+}
+button[type=button]:hover{
+	background:#026c7a;
+}
+.btn-info{
+	margin-top:20px;
+}

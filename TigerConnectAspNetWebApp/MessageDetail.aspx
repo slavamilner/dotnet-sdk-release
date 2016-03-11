@@ -21,6 +21,7 @@
     <!-- Custom CSS -->
     <link href="css/sb-admin.css" rel="stylesheet">
     <link href="css/ttDemo.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -43,7 +44,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">TigerConnect Asp.net Web Sample</a>
+                <a class="navbar-brand" href="default.aspx">TigerConnect Asp.net Sample</a>
             </div>
             <ul class="nav navbar-right top-nav"></ul>
             <div class="collapse navbar-collapse navbar-ex1-collapse">

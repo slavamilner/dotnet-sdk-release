@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="GroupDetail.aspx.cs" Inherits="TigerConnectAspNetWebApp.GroupDetail" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="TigerConnectAspNetWebApp.Default" %>
+
 
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -10,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>TigerConnect asp.net Sample - Group Detail</title>
+    <title>TigerConnect asp.net Sample - HOME</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -41,7 +42,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="default.aspx">TigerConnect Asp.net Sample</a>
+                <a class="navbar-brand" href="default.aspx">TigerConnect Asp.net</a>
             </div>
             <ul class="nav navbar-right top-nav"></ul>
             <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -55,7 +56,7 @@
                     <li>
                         <a href="CreateGroup.aspx"><i class="fa fa-fw fa-dashboard"></i>Group - Create</a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="GroupDetail.aspx"><i class="fa fa-fw fa-dashboard"></i>Group - Detail</a>
                     </li>
                     <li>
@@ -72,16 +73,13 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <asp:Literal runat="server" ID="sResults"></asp:Literal>
-                        <div class="panel panel-info">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Group Detail (Coming Soon)</h3>
-                            </div>
-                            <div class="panel-body">
-                                <form id="frmCreateGroup" role="form" runat="server">
-                                </form>
-                            </div>
-                        </div>
+                        <h3>Welcome to the TigerConnect asp.net sample website</h3>
+                        <h4>
+                            This website uses traditional asp.net web forms.  Each webpage is an example of using a specific TigerConnect REST API endpoint.  The form is used to capture input parameters, and the actual API call can be viewed in the code behind file.<br /><br />
+                            Use the menu on the left to navigate to different API endpoints.  Please note that the TigerConnect API code for each example could be used for any type of asp.net application.<br /><br />
+                            Please contact the TigerConnect team at tigerconnect@tigertext.com with any questions or feedback regarding the .NET SDK, or if you have general inquiries regarding the TigerConnect platform.<br /><br />
+                            Happy Coding!
+                        </h4>
                     </div>
                 </div>
             </div>
@@ -100,7 +98,3 @@
 
 </body>
 </html>
-
-
-
-

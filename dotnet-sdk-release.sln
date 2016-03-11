@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TigerConnectAspNetWebApp", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TigerConnectDotNetConsoleApp", "TigerConnectDotNetConsoleApp\TigerConnectDotNetConsoleApp.csproj", "{132776E1-2FC1-40EC-BE3D-47040C58E7F5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TigerConnectDotNetWindowsService", "TigerConnectDotNetWindowsService\TigerConnectDotNetWindowsService.csproj", "{E6A3CE94-C19E-4E3A-94BC-E8E519350B46}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{132776E1-2FC1-40EC-BE3D-47040C58E7F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{132776E1-2FC1-40EC-BE3D-47040C58E7F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{132776E1-2FC1-40EC-BE3D-47040C58E7F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6A3CE94-C19E-4E3A-94BC-E8E519350B46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6A3CE94-C19E-4E3A-94BC-E8E519350B46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6A3CE94-C19E-4E3A-94BC-E8E519350B46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6A3CE94-C19E-4E3A-94BC-E8E519350B46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

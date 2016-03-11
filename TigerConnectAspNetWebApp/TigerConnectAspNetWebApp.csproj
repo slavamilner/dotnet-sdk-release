@@ -110,6 +110,7 @@
     <Content Include="css\sb-admin-rtl.css" />
     <Content Include="css\sb-admin.css" />
     <Content Include="css\ttDemo.css" />
+    <Content Include="Default.aspx" />
     <Content Include="font-awesome\css\font-awesome.css" />
     <Content Include="font-awesome\css\font-awesome.min.css" />
     <Content Include="font-awesome\fonts\fontawesome-webfont.svg" />
@@ -186,6 +187,13 @@
     </Compile>
     <Compile Include="CreateGroup.aspx.designer.cs">
       <DependentUpon>CreateGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="GroupDetail.aspx.cs">
       <DependentUpon>GroupDetail.aspx</DependentUpon>

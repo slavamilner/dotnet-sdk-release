@@ -23,8 +23,22 @@ The .NET SDK is available to use with the following platforms/frameworks:
 
 ## Installation
 
-###Download Zipped Versions
-To get started, you can clone the repository or download the zipped version in order to access and use the projects. Once you open the solution in Visual Studio, you can build the solution in order to restore all NuGet references, and to run the example projects. Simply right-click on the project of interest and set it as your startup project to debug the code.
+To get started, you can clone the repository or download the zipped version in order to access and use the projects. Once you open the solution in Visual Studio, you can build the solution in order to restore all NuGet references, and to run the example projects. Simply right-click on the project of interest and set it as your startup project to debug the code.  Please see the sections below for additional notes on each sample project type, and for specific instructions on installing the Windows service provided as an example.
+
+### TigerConnectAspNetWebApp
+
+This is a traditional web application project using web forms (not MVC).  The default page offers a quick overview of the site and usage details.  Each webpage gives an example of a single API endpoint.  The UI offers a form to collect parameters, and the callback will use the .NET SDK to make a request to the TigerConnect REST API.  Please note that this site does not support any type of session management.  You simply add the API key and secret in the web.config file, and that is used by each form to authenticate with the SDK. 
+### TigerConnectDotNetConsoleApp
+
+This is a simple console application that demonstrates sending a message, as well as receiving events from the API.  There is a basic file watcher implementation that processes a queue folder, and can send any files dropped in that folder as an attachment in a TigerText message.  The console application is a great way to quickly test and debug code using the TigerConnect SDK.
+
+### TigerConnectDotNetWindowsService
+
+You should use this project type to develop any "bot" technology using the TigerConnect .NET SDK.  This template allows you to receive events, including new messages, that are sent to the user defined by the key an secret in the app.config file.  ONce you have set your key and secret and built the project in Visual Studio, you may install it as a service using the InstallUtil.exe file, which you can find in your <SYSTEMDRIVE>\Windows\Microsoft.Net directory.  Here is an example of installing the service from the command line:
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\installutil.exe C:\Users\admin\Downloads\dotnet-sdk-release-master\dotnet-sdk-release-master\TigerConnectDotNetWindowsService\bin\Debug\TigerConnectDotNetWindowsService.exe
+
+The service will write metadata to the Application Log in the Event Viewer for each message received.  Additionally, for group messages, any metadata associated with the group will also be written to the log.
+
 
 ###NuGet
 You may also add the TigerConnect .NET SDK to your existing projects by making references to the required libraries:

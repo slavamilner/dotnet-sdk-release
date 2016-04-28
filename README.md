@@ -72,7 +72,7 @@ private async static void Events_MessageReceivedEvent(object sender, TT.Win.SDK.
 
 ## Contact
 
-If you have any questions please reach out to the TigerConnect team any time by emailing [tigerconnect@tigertext.com](mailto:tigerconnect@tigertext.com).
+If you have any questions please reach out to the TigerConnect team any time by emailing [tigerconnect@tigertext.com](mailto:developersupport@tigertext.com).
 
 ## License
 
